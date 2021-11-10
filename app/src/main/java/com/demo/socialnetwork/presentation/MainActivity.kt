@@ -8,6 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.demo.socialnetwork.presentation.ui.theme.SocialNetworkTheme
+import com.demo.socialnetwork.presentation.util.Navigation
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.onBackground,
                     modifier = Modifier.fillMaxSize()
                 ) {
-
+                    Navigation()
                 }
             }
         }
